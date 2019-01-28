@@ -1,1 +1,54 @@
 Training
+
+
+
+
+ // noo MQ
+
+ $screen-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@each $keySize, $valueSize in $screen-breakpoints {
+    [hidden-#{$keySize}] {
+        @media (min-width: $valueSize) {
+            display: none;
+        }
+    }
+}
+
+@each $keySize, $valueSize in $screen-breakpoints {
+    [visible-block-#{$keySize}] {
+        @media (min-width: $valueSize) {
+            display: block;
+        }
+    }
+}
+
+@each $keySize, $valueSize in $screen-breakpoints {
+    [visible-inline-block-#{$keySize}] {
+        @media (min-width: $valueSize) {
+            display: inline-block;
+        }
+    }
+}
+
+@each $breakpoint in map-keys($screen-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $screen-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $screen-breakpoints) {
+      // Provide `[hidden-{bp}]` attributes for floating the element based
+      // on the breakpoint
+      [hidden#{$infix}] {
+          display: none !important;
+      }
+  }
+}
+
+/* using 
+<div hidden-xs visible-block-md>Hidden on small screen</div>
+*/
