@@ -27,3 +27,10 @@ browser.show();
 
 }
 
+// build
+
+build icon/splash.png
+ionic cordova resources
+
+ionic cordova platform add android
+ionic cordova run android
