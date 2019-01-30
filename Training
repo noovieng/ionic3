@@ -5,3 +5,25 @@ ionic cordova plugin add cordova-plugin-inappbrowser
 npm install @ionic-native/in-app-browser
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+import { Component } from '@angular/core';
+import { Platform } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  constructor(private iab: InAppBrowser, private platform: Platform) {
+    this.platform.ready().then(() => {
+      const browser = this.iab.create('https://www.bcel.com.la/bcelibank/index.jsp','_blank',{location:'no', zoom:'no'}); 
+browser.show();
+
+});
+  }
+
+}
+
