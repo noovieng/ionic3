@@ -3,3 +3,5 @@ Training
 
 ionic cordova plugin add cordova-plugin-inappbrowser
 npm install @ionic-native/in-app-browser
+
+import { InAppBrowser } from '@ionic-native/in-app-browser';
