@@ -1,37 +1,76 @@
-Training
-npm install -g nodemon
-./mongorestore ionic_cmpos “PATH”
-
-ionic cordova plugin add cordova-plugin-inappbrowser
-npm install @ionic-native/in-app-browser
-
-import { InAppBrowser } from '@ionic-native/in-app-browser';
-
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
-
-
-@Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
-})
-export class HomePage {
-
-  constructor(private iab: InAppBrowser, private platform: Platform) {
-    this.platform.ready().then(() => {
-      const browser = this.iab.create('https://www.bcel.com.la/bcelibank/index.jsp','_blank',{location:'no', zoom:'no'}); 
-browser.show();
-
-});
-  }
-
+/* 1 */
+{
+    "_id" : 1,
+    "category_name" : "Arudino Kits",
+    "parent_id" : 0
 }
 
-// build
+/* 2 */
+{
+    "_id" : 3,
+    "category_name" : "Display",
+    "parent_id" : 0
+}
 
-build icon/splash.png
-ionic cordova resources
+/* 3 */
+{
+    "_id" : 5,
+    "category_name" : "Controls Relay",
+    "parent_id" : 0
+}
 
-ionic cordova platform add android
-ionic cordova run android
+/* 4 */
+{
+    "_id" : 6,
+    "category_name" : "Servo and Motor",
+    "parent_id" : 0
+}
+
+/* 5 */
+{
+    "_id" : 7,
+    "category_name" : "IC and CPU",
+    "parent_id" : 0
+}
+
+/* 6 */
+{
+    "_id" : 4,
+    "category_name" : "Promotion",
+    "parent_id" : 0
+}
+
+/* 7 */
+{
+    "_id" : 2,
+    "category_name" : "RasberryPi",
+    "parent_id" : 0
+}
+
+/* 8 */
+{
+    "_id" : 16,
+    "category_name" : "new2",
+    "parent_id" : 0
+}
+
+/* 9 */
+{
+    "_id" : 17,
+    "category_name" : "new1",
+    "parent_id" : 16
+}
+
+/* 10 */
+{
+    "_id" : 18,
+    "category_name" : "new111",
+    "parent_id" : 16
+}
+
+/* 11 */
+{
+    "_id" : 19,
+    "category_name" : "new121212",
+    "parent_id" : 2
+}
