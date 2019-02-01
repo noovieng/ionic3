@@ -1,53 +1,19 @@
-
-    "_id" : 2,
-    "category" : 1,
-    "name" : "Arduino UNO R3 แถมสาย USB Type A Male/B Male Cable",
-    "image" : "product_04.jpg",
-    "stock" : 48,
-    "price" : 1223,
-    "unit" : 1
+{
+    "_id" : 1,
+    "name_th" : "ชิ้น",
+    "name_en" : "Piece of"
 }
 
 /* 2 */
 {
-    "_id" : 11,
-    "category" : 1,
-    "image" : "product_14.jpg",
-    "name" : "MAX7219 IC Driver Module + LED Dot Matrix 8x8 ขนาด 40mm x 40mm พร้อมสายไฟ",
-    "stock" : 49,
-    "price" : 95,
-    "unit" : 2
+    "_id" : 2,
+    "name_th" : "แพ็ค",
+    "name_en" : "Pack"
 }
 
 /* 3 */
 {
-    "_id" : 4,
-    "category" : 1,
-    "name" : "4-Channel 5VDC Relay Module Relay Active High / LOW",
-    "image" : "product_07.jpg",
-    "stock" : 95,
-    "price" : 185,
-    "unit" : 1
-}
-
-/* 4 */
-{
-    "_id" : 5,
-    "category" : 1,
-    "name" : "Raspberry Pi 3 Model B 1 GB",
-    "stock" : 73,
-    "image" : "product_08.jpg",
-    "price" : 1800,
-    "unit" : 1
-}
-
-/* 5 */
-{
-    "_id" : 8,
-    "category" : 5,
-    "image" : "product_11.jpg",
-    "stock" : 95,
-    "name" : "Arduino Sensor Shield V5.1",
-    "price" : 1201,
-    "unit" : 1
+    "_id" : 3,
+    "name_th" : "ชุด",
+    "name_en" : "Set"
 }
