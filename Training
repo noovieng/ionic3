@@ -1,5 +1,6 @@
 Training
-
+npm install -g nodemon
+./mongorestore ionic_cmpos “PATH”
 
 ionic cordova plugin add cordova-plugin-inappbrowser
 npm install @ionic-native/in-app-browser
